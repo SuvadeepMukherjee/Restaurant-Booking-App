@@ -1,0 +1,18 @@
+#submit {
+  background-color: #4681f4;
+  color: white;
+}
+
+.editbtn {
+  background-color: green;
+  color: white;
+}
+
+.deletebtn {
+  background-color: red;
+  color: white;
+}
+
+p {
+  font-weight: bold;
+}

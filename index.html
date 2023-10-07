@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Restaurant Booking App</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.4.0/axios.min.js"></script>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body style="text-align: center">
+    <br />
+    <br />
+    <h2>Restaurant Booking App</h2>
+    <br />
+    <br />
+    <form>
+      <label for="price">Choose Price</label>
+      <input type="text" id="price" />
+      <label for="dish">Choose Dish</label>
+      <input type="text" id="dish" />
+      <label for="category">Choose Category</label>
+      <select id="category" name="ecategory">
+        <option value="table1">Table 1</option>
+        <option value="table2">Table 2</option>
+        <option value="table3">Table 3</option>
+        <option value="table4">Table 4</option>
+      </select>
+      <br />
+      <br />
+
+      <input type="submit" value="Choose Your Dish" id="submit" />
+    </form>
+    <br />
+    <br />
+    <p>Your Bookings</p>
+    <br />
+    <br />
+    <div id="display"></div>
+    <script src="./app.js"></script>
+  </body>
+</html>
