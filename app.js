@@ -89,7 +89,7 @@ parent.addEventListener("click", async function editDelete(e) {
 /***********************************************************/
 //listening to click on submit button
 /***********************************************************/
-submit.addEventListener("click", function (e) {
+submit.addEventListener("click", async function (e) {
   e.preventDefault();
 
   //extract values from input Fields
@@ -105,11 +105,10 @@ submit.addEventListener("click", function (e) {
   };
   if (id === 1) {
     //if its fresh data , add it via an HTTP Post request
-    axios.post(`${url}/order`, obj).then((res) => console.log(res));
-    location.reload();
+    await axios.post(`${url}/order`, obj).then((res) => console.log(res));
   } else if (id !== 1) {
     //if its an edit operation update the data via an HTTP Put request
-    axios.put(`${url}/order/${id}`, obj).then((res) => console.log(res));
-    location.reload();
+    await axios.put(`${url}/order/${id}`, obj).then((res) => console.log(res));
   }
+  location.reload();
 });
